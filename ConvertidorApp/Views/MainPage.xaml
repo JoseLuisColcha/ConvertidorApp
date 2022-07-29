@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConvertidorApp.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Orientation="Vertical"
+                 BackgroundColor="#8A6AF7">
+        <Label Text="Convertidor"
+               FontSize="40"
+               FontAttributes="Bold"
+               Margin="0,20,0,0"
+               HorizontalOptions="Center"
+               TextColor="White" />
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="10,10,10,10"
+               CornerRadius="20"
+               HasShadow="False">
+            <StackLayout VerticalOptions="Center"
+                         Spacing="15">
+                <Image Source="https://i.ibb.co/dBLTnYH/blue-owl-animal-jam-owl-1555899.png" />
+                <Label Text="cm a m"
+                       FontSize="40"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#36D8CB" />
+                <Button Text="Empezar"
+                        BackgroundColor="#8A6AF7"
+                        CornerRadius="80"
+                        TextColor="White" 
+                        x:Name="btnIniciar"
+                        Clicked="btnIniciar_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
